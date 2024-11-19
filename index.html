@@ -14,17 +14,13 @@
       background-color: #f8f9fa;
     }
     header {
-      background: #333; /* Updated to dark gray for better sync with logo */
+      background: #0073e6; /* Restored blue header */
       color: #fff;
       text-align: center;
       padding: 4rem 1rem;
     }
     nav.navbar {
-      background-color: #333; /* Same as header background */
-    }
-    nav .navbar-brand {
-      display: flex;
-      align-items: center;
+      background-color: #0073e6; /* Restored navbar color */
     }
     nav .navbar-brand img {
       height: 40px;
@@ -33,16 +29,22 @@
     section {
       padding: 4rem 1rem;
     }
+    .video-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .video-section p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .contact-card {
+      text-align: left;
+    }
     footer {
       background: #222;
       color: #fff;
       text-align: center;
       padding: 1rem 0;
-    }
-    .icon {
-      font-size: 2rem;
-      color: #0073e6;
-      margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -79,7 +81,7 @@
   <!-- Hero Section -->
   <header>
     <h1>Welcome to Nerd Nudge</h1>
-    <p class="lead">Your ultimate app for mastering tech concepts.</p>
+    <p class="lead">Master Tech Concepts. Retain What Matters.</p>
     <a href="#get-the-app" class="btn btn-light btn-lg">Learn More</a>
   </header>
 
@@ -108,32 +110,37 @@
   </section>
 
   <!-- Video Section -->
-  <section class="text-center py-5">
+  <section class="video-section text-center py-5 bg-light">
     <div class="container">
-      <h2>Watch Nerd Nudge in Action</h2>
-      <iframe src="https://drive.google.com/file/d/1Kmse7EWTqbzxAROPFnir2UnudX11TkSX/preview" width="560" height="315" allow="autoplay"></iframe>
+      <h2>Discover Nerd Nudge in Action</h2>
+      <p>Watch how Nerd Nudge helps you <strong>boost your tech skills</strong> and <strong>enhance memory retention</strong> through engaging quizzes and interactive learning techniques.</p>
+      <p>Take your knowledge to the next level with <strong>fun, effective learning</strong>!</p>
+      <iframe src="https://drive.google.com/file/d/1Kmse7EWTqbzxAROPFnir2UnudX11TkSX/preview" width="960" height="615" allow="autoplay"></iframe>
     </div>
   </section>
 
   <!-- Call-to-Action Section -->
-  <section id="get-the-app" class="text-center bg-light">
+  <section id="get-the-app" class="text-center py-5">
     <div class="container">
       <h2>Get the App</h2>
       <p>Coming soon to the Play Store and App Store!</p>
-      <a href="#" class="btn btn-primary btn-lg">Sign Up for Updates</a>
+      <form class="d-inline">
+        <input type="email" class="form-control d-inline-block w-auto mb-2" placeholder="Enter your email">
+        <button type="submit" class="btn btn-primary btn-lg">Sign Up for Updates</button>
+      </form>
     </div>
   </section>
 
   <!-- Contact Us Section -->
-  <section id="contact-us" class="py-5">
+  <section id="contact-us" class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-4">Contact Us</h2>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 contact-card">
           <h4>Location</h4>
           <p>Singapore</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 contact-card">
           <h4>Contact</h4>
           <p>Email: <a href="mailto:neurosparktech@gmail.com">neurosparktech@gmail.com</a></p>
         </div>
