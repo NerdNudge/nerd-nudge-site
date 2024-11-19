@@ -33,13 +33,20 @@
       color: #0073e6;
       margin-bottom: 1rem;
     }
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
   </style>
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Nerd Nudge</a>
+      <a class="navbar-brand" href="#">
+        <img src="https://raw.githubusercontent.com/NerdNudge/nerd-nudge-site/main/NerdNudgeLogo%20-%20blackish%20Background.png" alt="Nerd Nudge Logo">
+        Nerd Nudge
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -99,11 +106,16 @@
     </div>
   </section>
 
-  <!-- Screenshot Section -->
-  <section class="text-center">
+  <!-- Video Section -->
+  <section class="text-center py-5">
     <div class="container">
-      <h2>See the App in Action</h2>
-      <img src="https://via.placeholder.com/800x400" class="img-fluid mt-4" alt="Nerd Nudge App Screenshot">
+      <h2>Watch Nerd Nudge in Action</h2>
+      <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/OVevlmNmiHo" 
+              title="Nerd Nudge Video" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
     </div>
   </section>
 
@@ -111,7 +123,6 @@
   <footer>
     <div class="container">
       <p>© 2024 Nerd Nudge. All Rights Reserved.</p>
-      <a href="https://github.com/nerdnudge" target="_blank" class="text-white">GitHub</a>
     </div>
   </footer>
 
