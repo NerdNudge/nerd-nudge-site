@@ -14,13 +14,13 @@
       background-color: #f8f9fa;
     }
     header {
-      background: #0073e6; /* Restored blue header */
+      background: #3A0057; /* Dark purple matching the logo */
       color: #fff;
       text-align: center;
       padding: 4rem 1rem;
     }
     nav.navbar {
-      background-color: #0073e6; /* Restored navbar color */
+      background-color: #3A0057;
     }
     nav .navbar-brand img {
       height: 40px;
@@ -29,19 +29,38 @@
     section {
       padding: 4rem 1rem;
     }
-    .video-section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+    .video-section iframe {
+      width: 100%;
+      max-width: 900px;
+      aspect-ratio: 16 / 9; /* Maintains a responsive ratio */
     }
-    .video-section p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
+    .form-container input {
+      font-size: 1rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .form-container button {
+      font-size: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #6A1B9A; /* Purple button */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-container button:hover {
+      background-color: #50117B; /* Darker purple */
     }
     .contact-card {
-      text-align: left;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .contact-card h4 {
+      color: #3A0057; /* Matching logo color */
     }
     footer {
-      background: #222;
+      background: #3A0057;
       color: #fff;
       text-align: center;
       padding: 1rem 0;
@@ -115,7 +134,7 @@
       <h2>Discover Nerd Nudge in Action</h2>
       <p>Watch how Nerd Nudge helps you <strong>boost your tech skills</strong> and <strong>enhance memory retention</strong> through engaging quizzes and interactive learning techniques.</p>
       <p>Take your knowledge to the next level with <strong>fun, effective learning</strong>!</p>
-      <iframe src="https://drive.google.com/file/d/1Kmse7EWTqbzxAROPFnir2UnudX11TkSX/preview" width="960" height="615" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/1Kmse7EWTqbzxAROPFnir2UnudX11TkSX/preview" allow="autoplay"></iframe>
     </div>
   </section>
 
@@ -124,10 +143,10 @@
     <div class="container">
       <h2>Get the App</h2>
       <p>Coming soon to the Play Store and App Store!</p>
-      <form class="d-inline">
-        <input type="email" class="form-control d-inline-block w-auto mb-2" placeholder="Enter your email">
-        <button type="submit" class="btn btn-primary btn-lg">Sign Up for Updates</button>
-      </form>
+      <div class="form-container">
+        <input type="email" class="form-control d-inline-block w-50 mb-2" placeholder="Enter your email">
+        <button type="submit" class="btn">Sign Up for Updates</button>
+      </div>
     </div>
   </section>
 
