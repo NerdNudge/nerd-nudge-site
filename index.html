@@ -14,10 +14,21 @@
       background-color: #f8f9fa;
     }
     header {
-      background: #0073e6;
+      background: #333; /* Updated to dark gray for better sync with logo */
       color: #fff;
       text-align: center;
       padding: 4rem 1rem;
+    }
+    nav.navbar {
+      background-color: #333; /* Same as header background */
+    }
+    nav .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+    nav .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
     }
     section {
       padding: 4rem 1rem;
@@ -33,15 +44,11 @@
       color: #0073e6;
       margin-bottom: 1rem;
     }
-    .navbar-brand img {
-      height: 40px;
-      margin-right: 10px;
-    }
   </style>
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="https://raw.githubusercontent.com/NerdNudge/nerd-nudge-site/main/NerdNudgeLogo%20-%20blackish%20Background.png" alt="Nerd Nudge Logo">
@@ -60,6 +67,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#get-the-app">Get the App</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -97,6 +107,14 @@
     </div>
   </section>
 
+  <!-- Video Section -->
+  <section class="text-center py-5">
+    <div class="container">
+      <h2>Watch Nerd Nudge in Action</h2>
+      <iframe src="https://drive.google.com/file/d/1Kmse7EWTqbzxAROPFnir2UnudX11TkSX/preview" width="560" height="315" allow="autoplay"></iframe>
+    </div>
+  </section>
+
   <!-- Call-to-Action Section -->
   <section id="get-the-app" class="text-center bg-light">
     <div class="container">
@@ -106,16 +124,20 @@
     </div>
   </section>
 
-  <!-- Video Section -->
-  <section class="text-center py-5">
+  <!-- Contact Us Section -->
+  <section id="contact-us" class="py-5">
     <div class="container">
-      <h2>Watch Nerd Nudge in Action</h2>
-      <iframe width="560" height="315" 
-              src="https://www.youtube.com/embed/OVevlmNmiHo" 
-              title="Nerd Nudge Video" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen></iframe>
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Location</h4>
+          <p>Singapore</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Contact</h4>
+          <p>Email: <a href="mailto:neurosparktech@gmail.com">neurosparktech@gmail.com</a></p>
+        </div>
+      </div>
     </div>
   </section>
 
